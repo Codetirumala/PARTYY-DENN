@@ -208,6 +208,183 @@
 
     </section>
 
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="section-header">
+            <h2>Our Gallery</h2>
+            <p>Capturing Moments of Joy</p>
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="gallery/1.jpg" alt="Party Den Interior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Luxury Interior</h3>
+                            <p>Experience premium comfort</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery/3.jpg" alt="Birthday Celebration" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Birthday Celebrations</h3>
+                            <p>Make your day special</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery/2.jpg" alt="Movie Screening" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Movie Experience</h3>
+                            <p>Premium screening setup</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery/4.jpg" alt="IPL Screening" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>IPL Screening</h3>
+                            <p>Watch cricket in style</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery/5.jpg" alt="Anniversary Celebration" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Anniversary Celebrations</h3>
+                            <p>Create lasting memories</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery/6.jpg" alt="Special Events" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Special Events</h3>
+                            <p>Perfect for every occasion</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery/7.jpg" alt="Party Time" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Party Time</h3>
+                            <p>Let's get the party started!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery/6.jpg" alt="Theatre Experience" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Theatre Experience</h3>
+                            <p>Perfect space for aspiring artists</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .gallery-section {
+                background: #0a0a0a;
+                padding: 80px 0;
+            }
+
+            .gallery-container {
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            .gallery-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 20px;
+                padding: 20px 0;
+            }
+
+            .gallery-item {
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                aspect-ratio: 1;
+                cursor: pointer;
+            }
+
+            .gallery-item img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+
+            .gallery-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .gallery-content {
+                text-align: center;
+                color: #fff;
+                transform: translateY(20px);
+                transition: transform 0.3s ease;
+            }
+
+            .gallery-content h3 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+                color: #ffd700;
+            }
+
+            .gallery-content p {
+                font-size: 1rem;
+                opacity: 0.9;
+            }
+
+            .gallery-item:hover img {
+                transform: scale(1.1);
+            }
+
+            .gallery-item:hover .gallery-overlay {
+                opacity: 1;
+            }
+
+            .gallery-item:hover .gallery-content {
+                transform: translateY(0);
+            }
+
+            @media (max-width: 768px) {
+                .gallery-grid {
+                    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                    gap: 15px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .gallery-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="section">
         <div class="section-header">
